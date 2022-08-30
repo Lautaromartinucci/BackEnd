@@ -1,3 +1,5 @@
+//// PRIMER ENTREGA
+
 class Persona {
     constructor(nombre, apellido){
         this.nombre = nombre;
@@ -5,7 +7,7 @@ class Persona {
         this.libros = [];
         this.mascotas = [];
     }
-
+    //metodos
     getFullName() {
        return(`El completo es: ${this.nombre} ${this.apellido}.`) 
     }
@@ -15,7 +17,7 @@ class Persona {
     }
 
     countMascotas(){
-           return (this.mascotas.length)
+        return (this.mascotas.length)
     }
 
     addBook(nombre, autor){
@@ -25,12 +27,11 @@ class Persona {
 
     getBookName() {
 
-            return this.libros.map(object =>{
-                return (object.autor);
-            }); 
+        return this.libros.map(object =>{
+            return (object.nombre);
+        }); 
 
-        //return this.libros.filter(autor => autor.nombre === autor)
-        
+    
     }
 }
 
